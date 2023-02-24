@@ -1,6 +1,6 @@
-# kubeconf
+# khaddock
 
-Kubeconf is focused on providing declarative APIs and tooling to simplify configuration VMs (_or agents_) by only declaring states, providing a more secure and maintanable fleet of machines.
+Khaddock is focused on providing declarative APIs and tooling to simplify configuration VMs (_or agents_) by only declaring states, providing a more secure and maintanable fleet of machines.
 
 ## Why?
 
