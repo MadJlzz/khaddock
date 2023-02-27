@@ -33,3 +33,13 @@ To finish, Ansible do not handle a **state** meaning that even with no change, i
 They represent pretty much what I had in mind when thinking of a `state` or a `recipe`. So what's the problem?
 
 I think we all agree saying that both of these tools are HARD to master and to deploy and I am not talking of PuppetDSL and RubyDSL which to me, are just a nightmare to work with.
+
+### What's next?
+
+Since I am a a beginner with Golang ; after looking at the documentation of Kubernetes on how to create a custom controller ; the initial idea might be a bit overkill.
+As a first iteration of this project, I might develop all the components independly of Kubernetes first and integrate a CRD afterwards.
+
+I might divide this repository in multiple parts for a first version:
+  * `khaddock/captain` will represent the server part, in charge of centralize all of the required data operations.
+  * `khaddock/sailor` that will act as an `agent` running on the target VMs that requires to be configured.
+  * `khaddock/engine` will contain most of the core business, reusable by both of the other packages.
